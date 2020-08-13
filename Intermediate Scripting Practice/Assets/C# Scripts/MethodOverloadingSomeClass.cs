@@ -1,17 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Configuration;
 using UnityEngine;
 
-public class gameProperties : MonoBehaviour
+public class MethodOverloadingSomeClass : MonoBehaviour
 {
+
+    public int Add(int num1, int num2)
+    {
+        return num1 + num2;
+    }
+
+    public string Add(string str1, string str2)
+    {
+        return str1 + str2;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        Player myPlayer = new Player();
-
-        myPlayer.Experience = 5;
-        int x = myPlayer.Experience;
+        
     }
 
     // Update is called once per frame
